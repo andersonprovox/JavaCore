@@ -44,3 +44,8 @@ Arquivos, anotações e exercícios propostos pela plataforma Java Insider da So
   - o Javac **compila** o código java em bytecode
   - a JVM **interpreta** esse bytecode para executar a aplicação
 - JDK kit de ferramentas do desenvolvedor
+
+## Benefícios da JVM
+- Possui Garbage Collector a memória que foi alocada após o uso automaticamente vai desalocar o espaço alocado.
+- Performance detecta códigos muito usados e mantém esses na memória(Princípio de JIT)
+- segurança faz checagem da aplicação durante a execução, como acesso de aplicações externas ao programa executado.
