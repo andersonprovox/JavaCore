@@ -49,3 +49,12 @@ Arquivos, anotações e exercícios propostos pela plataforma Java Insider da So
 - Possui Garbage Collector a memória que foi alocada após o uso automaticamente vai desalocar o espaço alocado.
 - Performance detecta códigos muito usados e mantém esses na memória(Princípio de JIT)
 - segurança faz checagem da aplicação durante a execução, como acesso de aplicações externas ao programa executado.
+
+## Variáveis no Java
+- Java é uma linguagem fortemente tipada, então:
+  - Ao inicializar uma variável tem que declarar o seu tipo
+  - Uma vez atribuido um tipo não vai aceitar nenhum valor de outro tipo
+- Possui tipos primitivos e classes
+- variáveis não podem ser usadas se não forem inicializadas
+- No Java valores booleanos não podem ter representação numérica, como por exemplo podemos ver no JS
+- 
