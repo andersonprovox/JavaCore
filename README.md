@@ -97,3 +97,17 @@ Quando um valor pode ser armazenado numa variável de um valor com capacidade de
 
 ### Cast explícito
 Quando determinamos qual o tipo um dado vai se tornar pelo uso de métodos que farão conversão de tipo de dados em para uma variável.
+```java
+public class ExplicitCasting {
+  public static void main(String[] args) {
+    double d = 240.56;
+    int i = (int) d;
+
+    System.out.println(d);//240.56
+    System.out.println(i);//240
+  }
+}
+```
+É um modo de deixar na responsabilidade do desenvolvedor e este deve ter cuidado para não errar e comprometer o dado.
+Um exemplo e pegar o dado de uma variável com tipo maior do que a variável que vai receber o dado, como pegar o dado de um tipo long e adicionar a um int
+
