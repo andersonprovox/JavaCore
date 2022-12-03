@@ -71,6 +71,34 @@ Arquivos, anotações e exercícios propostos pela plataforma Java Insider da So
 
 - char tem representação numérica
 - essa representação tem relação com a tabela ASCII
+
+### características do tipo Char
+- Por mais que você atribua uma letra à variável tipo Char, ele armazena um número.
+- Este número tem relação com a tabela ASCII.
+- Pode manipular números para encontrar os caracteres da tabela, mas não force nada menor que zero, pois vai apresentar caracteres não conhecidos.
+
+```java
+public class CharType {
+    public static void main(String[] args) {
+        char c1 = 'A';
+        System.out.println(c1);//A
+
+        int i1 = c1;
+        System.out.println(i1);//65
+
+        char c2 = 'A' + 2;
+        System.out.println(c2);//C
+
+        char c3 = 48;
+        System.out.println(c3);//1
+
+        char c4 = (char) -10;
+        System.out.println(c4);//caractere não reconhecível
+    }
+}
+```
+
+
 ### Regras para nome de variáveis
 **O que não pode ser usado na nomeação de variávels:**
 - números iniciando o nome da variável,  `int 9abc`.
@@ -110,4 +138,49 @@ public class ExplicitCasting {
 ```
 É um modo de deixar na responsabilidade do desenvolvedor e este deve ter cuidado para não errar e comprometer o dado.
 Um exemplo e pegar o dado de uma variável com tipo maior do que a variável que vai receber o dado, como pegar o dado de um tipo long e adicionar a um int
+
+## Tipo String
+O Tipo String é uma classe, é uma cadeia de caracteres.
+Materialização de Strings são de objetos do Java, portanto, isso faz com que ela tenha métodos:
+ - toLowerCase()
+ - toUpperCase()
+ - e outros
+
+As Strings no Java são sempre delimitadas em aspas duplas, nunca confundir com as aspas simples do tipo primito char. No JS isso não faz tanta diferença, mas aqui faz, fique atento.
+```java
+public class Strings {
+    public static void main(String[] args) {
+        String s = "abc";
+        String y = "FFF";
+        String z = s + y;
+        z = z.toUpperCase();//perfeitamente possível reatribuir uma string para a sua variável
+
+        System.out.println(z);
+    }
+}
+```
+### Text Blocks
+Nova função nas versões recentes do Java que permite uma configuração para blocos de textos sem o uso de determinados caracteres de escape como por exemplo o `\n`.
+```java
+public class TextBlocks {
+    public static void main(String[] args) {
+        // antes dos text blocks era assim que se pulava linha ou identação
+        System.out.println("Olá,\n  tudo\n    bem");
+
+        //com text block
+        String s = """
+                Olá,
+                    tudo
+                        bem
+             """;
+
+        System.out.println(s);
+    }
+}
+```
+Algumas regras para o text block:
+- Assim que definir as 3 aspas duplas não pode colocar o texto na mesma linha
+- As aspas no final determinam a margem inicial à esquerda, o Intellij exibe uma linha que torna a identificação dela linha de forma visual.
+
+
 
