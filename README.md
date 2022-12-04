@@ -182,5 +182,82 @@ Algumas regras para o text block:
 - Assim que definir as 3 aspas duplas não pode colocar o texto na mesma linha
 - As aspas no final determinam a margem inicial à esquerda, o Intellij exibe uma linha que torna a identificação dela linha de forma visual.
 
+### Input de dados
+Exemplo mostrando um input de dados pelo terminal:
+```java
+public class KeyboardInput {
+    public static void main(String[] args) {
+        var scanner = new Scanner(System.in);
+        System.out.print("Texto 1: ");
+        String info1 = scanner.nextLine();
 
+        System.out.print("Texto 2: ");
+        String info2 = scanner.nextLine();
+
+        System.out.println(info1 + info2);
+    }
+}
+```
+
+## Operadores do Java
+
+### Aritméticos
+|Simbolo|Descrição|Exemplo|
+|-------|---------|-------|
+| + |soma|a + b|
+| - |subtração| a - b|
+| * | Multiplicação| a * b|
+| / | Divisão | a / b|
+| % | Módulo ( Resto da divisão)| a % b|
+
+Fazer um divisão com o numerador for menor que o divisor ele gera um número double, se estiver lidando com números inteiros
+será exibido o número zero.
+Para conseguir a divisão usando double é necessário um Casting Explicito:
+```java
+public class OperadoresDivisao {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 2;
+        double c = (double) b / a;
+        System.out.println(c);
+    }
+}
+```
+- Veja que o Java vai dar o resultado com o tipo mais abrangente.
+- Dois int vão dar resultado int.
+- Com o casting explicito em um dos int para double ou nos dois será possível obter o resultado double corretamente.
+
+### relacionais
+| Símbolo | Descrição | Exemplo |
+|---------|-----------|--------|
+| ==      | igual     | a == b |
+| !=      | Diferente | a != b |
+| '>'      | Maior que | a > b  |
+| < | Menor que | a < b|
+| '>=' | Maior ou igual | a >= b|
+| <=| Menor ou igual| a<= b|
+
+### Lógicos
+| Símbolo | Descrição | Exemplo |
+|------|---------|-------|
+| &&   | E(and)  | a && b |
+|        | Ou (or)| a  b|
+| !    | not     | !a    |
+```java
+public class OperatorLogic {
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(a && b);//and
+        System.out.println(a || b);//or
+        System.out.println( !a);//not
+    }
+}
+```
+
+Essas operações acontecem de acordo com a tabela verdade.
+Para executar uma validação com operações lógicos deve será obedecida a ordem de importância(da esq. para a dir.):
+- `! -> && -> ||`
+- not -> and -> or
 
