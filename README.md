@@ -261,3 +261,8 @@ Para executar uma validação com operações lógicos deve será obedecida a or
 - `! -> && -> ||`
 - not -> and -> or
 
+
+
+## Exercícios
+Aqui está a lista de exercícios resolvidos durante o módulo.
+- ExExpression.java
