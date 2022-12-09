@@ -260,9 +260,23 @@ Essas operações acontecem de acordo com a tabela verdade.
 Para executar uma validação com operações lógicos deve será obedecida a ordem de importância(da esq. para a dir.):
 - `! -> && -> ||`
 - not -> and -> or
+### de Atribuição
 
+Os mais comuns de encontrar:
+
+|Símbolo|Descrição|Exemplo|
+|-------|---------|-------|
+| =     |Atribui valor|a = 1|
+| += |Soma e atribui| a+= 5|
+| -= | Subtrai e atribui| a -= 5|
+| *= | Multiplica e atribui| a *= 5|
+| /= | Divide e atribui | a/= 2|
+| ++ | Incrementa | a++, ++a|
+|--| decrementa | a--, --a|
 
 
 ## Exercícios
 Aqui está a lista de exercícios resolvidos durante o módulo.
 - ExExpression.java
+- ExMediaAluno.java
+- ExTemperatureConversion.java
