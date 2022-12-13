@@ -274,6 +274,40 @@ Os mais comuns de encontrar:
 | ++ | Incrementa | a++, ++a|
 |--| decrementa | a--, --a|
 
+### detalhes sobre incremento e decremento
+Quando usamos o pós incremento `a++`, na linha ele vai usar o valor atual do a e depois vai incrementar.
+```java
+class main {
+    public static void main (String[] args) {
+      int a = 2;
+      int b = 3 + a++; // 2 + 5
+      
+      b = 3 + ++a; //3 + 3
+      
+      int c = 1;
+      c++;
+      
+      ++c; //Os dois terão o mesmo comportamento
+    }
+}
+    
+```
+Quando usandos o pré incremento `++a` primeiro vai incrementar o a e depois seguir com as demais operações que houverem na linha.
+
+**OBS:** Isso vale para o decremento também.
+
+O pré ou pós incremento só terá o mesmo comportamento de incrementar ou decrementar valor se a variável recebendo esse tipo de operação estiver em uma linha isolada.
+
+## Estruturas de seleção
+Estruturas que pode executar certas instruções de acordo com o atendimento de condições estabelecidas no código.
+
+como acontece com o `if()` que uma condição deve ser verdadeira para que os código pertencente a este bloco possa executar. Caso seja falso não será executado e vai mandar a parte subsequente do código para continuar a execução do programa. 
+Pode conter a instrução `else`, quando a condição do `if()`
+não for satisfeita ele sempre será executado. Possível também usar `else if` para testar várias
+condições previstas dentro da aplicação.
+
+Veja o arquivo `IfElse.java`, para uma demonstração usando várias condições.
+
 
 ## Exercícios
 Aqui está a lista de exercícios resolvidos durante o módulo.
