@@ -1,7 +1,16 @@
 # Java Insider Core
 Arquivos, anotações e exercícios propostos pela plataforma Java Insider da Softblue, neste módulo sobre Java.
 
-## Início
+## Índice
+1. [Início](#Início)
+2. [Execução e Compilação](#execução-e-compilação)
+3. Benefícios da JVM
+4. Variáveis no Java
+5. Tipo String
+6. Operadores do Java
+7. Estruturas de seleção
+
+## Início <a name="Início"></a>
 - em 1992 a Sun microsystems buscava inovações tecnológicas
 - criou um interpretador para trabalhar com aparelhos eletrônicos como:
   - Tvs
@@ -308,9 +317,96 @@ condições previstas dentro da aplicação.
 
 Veja o arquivo `IfElse.java`, para uma demonstração usando várias condições.
 
+### switch
+permite somente tipos primivos(byte, shor, char e int) de dados e enums e Strings.
+
+Somente atua em casos de igualdade.
+
+```java
+public class Switch {
+
+  public static void main(String[] args) {
+    int month = 3;
+    int days;
+
+    switch (month) {
+      case 1:
+        days = 31;
+        break;
+      case 2:
+        days = 28;
+        break;
+      case 3:
+        days = 31;
+        break;
+      case 4:
+        days = 30;
+        break;
+      default:
+        days = 0;
+        System.out.println("Inválido");
+    }
+
+    System.out.println(days + "dias");
+  }
+
+}
+```
+
+### Switch Expressions
+Permite a atribuição do valor de um switch em uma variável.
+- Expressão se torna mais resumida para escrever e ler
+- permite usar blocos dentro de case e retornar um valor usando o yield
+- O yield pode ser usado somente quando houver um bloco de código atribuido a um case
+- blocos são definidos com `{}`
+- switch expressions usam `->` para atribuição de valor
+- Opção atribuída no Java 14
+
+```java
+public class SwitchExpressions {
+    public static void main(String[] args) {
+        int month = 5;
+        int days = switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> 31;
+            case 2 -> 28;
+            case 4, 6, 9, 11 -> 30;
+            default -> {
+                System.out.println("Inválido");
+                yield 0;
+            }
+        };
+
+        System.out.println(days + " dias");
+    }
+}
+```
+### Escopo de variáveis
+O Java mantém as variáveis dentro do seu escopo de forma estrita, ou seja, a variável definida dentro 
+de um bloco de código só será utilizável dentro daquele bloco.
+por exemplo, no caso abaixo a variável criada dentro do bloco do if não será visível forma dele.
+```java
+public class varScope {
+    public static void main(String[] args) {
+        int a = 20;
+        
+        if (a == 20) {
+            int b = 10;
+        }
+        
+        System.ou.println(b);
+    }
+}
+```
+A variável b não será impressa e a IDE caso use uma irá apontar um erro.
+
+### Operadores ternários
+
 
 ## Exercícios
 Aqui está a lista de exercícios resolvidos durante o módulo.
 - ExExpression.java
 - ExMediaAluno.java
 - ExTemperatureConversion.java
+- ExCalculateXValues.java
+- ExValorMulta.java
+- ExDiaSemana.java
