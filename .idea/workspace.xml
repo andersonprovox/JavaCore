@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="144f3e74-0d5a-4a95-8ab0-49c93355d091" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExDiaSemana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExValorMulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SwitchExpressions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VarScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exCalculateXValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RepeatWhileDoWhile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TernatyIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repeatFor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaCore/ExTemperatureConversion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCore/ExTemperatureConversion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Switch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

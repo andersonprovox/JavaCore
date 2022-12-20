@@ -400,6 +400,34 @@ public class varScope {
 A variável b não será impressa e a IDE caso use uma irá apontar um erro.
 
 ### Operadores ternários
+Operadores que podem ser usados quando temos de fazer uso de alguma estrutura de descisão, mas o retorno de valores pode 
+ser um ou outro. como por exemplo sim ou não, isso faz com que o código fique menos e legível.
+
+```java
+public class TernaryIf {
+    public static void main(String[] args) {
+        int age = 18;
+        String text = age >= 18 ? "Maior de idade": "Menor de idade";
+
+        System.out.println(text);
+    }
+}
+```
+A estrutura segue a seguinte lógica:
+`condição_para_validação ? "resposta_se_verdadeiro: "Resposta_se_falso"`.
+
+## Estrutura de repetição
+Estrutura que repete uma determinada operação ou bloco de código até alcançar uma condição estipulada.
+
+### while e do...while
+Estruturas de repetição que vão executar trechos de código enquanto uma condição for verdadeira.
+No while so será executado o trecho de código se a condição for satisfeita, com o do... while uma vez 
+o código será executado e depois terá a verificação de  uma condição se é verdadeira.
+mais exemplo no arquivo `RepeatWhileDoWhile.java`.
+
+### For
+Também é uma estrutura de repetição, mas é estipulação uma condição na qual
+será executado um trecho de código enquanto a condição for verdadeira.
 
 
 ## Exercícios
