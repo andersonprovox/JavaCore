@@ -428,6 +428,102 @@ mais exemplo no arquivo `RepeatWhileDoWhile.java`.
 ### For
 Também é uma estrutura de repetição, mas é estipulação uma condição na qual
 será executado um trecho de código enquanto a condição for verdadeira.
+útil para cenários com um número pré-definido de execuções. Muito utilizado para facilitar a vida com coleções(collections)
+
+**Alguns usos incomuns para o for**
+- Podemos atribuir valores para mais de uma variável no for, mas não pode iniciar as variáveis nele;
+- Podemos incrementar e decrementar mais de uma variável dentro do for
+- Os incrementos podem ser outras expressões fora os tradicionais
+- as 3 seções do for não são obrigatórias
+```java
+public class RepeatForOtherUsages {
+    public static void main(String[] args) {
+        int i, j;
+        for ( i = 0, j = 9; i < 10 ; i++, j--) {
+            System.out.println(i + " " + j);
+        }
+
+        System.out.println("---------------------");
+        
+        for (int x = 1; x < 100 ; x*= 2) {
+            System.out.println(x);
+        }
+
+
+        System.out.println("------------------------");
+        
+        int y = 0;
+        for (; y < 10; ) {
+            System.out.println(y);
+            y++;
+        }
+    }
+}
+```
+### Usando break no for
+Podemos usar para interromper a execução mediante uma condição:
+```java
+public class RepeatBreak {
+    public static void main(String[] args) {
+        int i = 0;
+        
+        while(i < 200) {
+            System.out.println(i);
+            i++;
+            
+            if(i == 100) {
+              break;  
+            }
+        }
+        System.out.println("FIM");
+    }
+}
+```
+
+### continue no for
+Para forçar a execução do for e pular alguma instrução após uma condição dentro do laço.
+```java
+public class RepeatCotinue {
+    public static void main(String[] args) {
+        for (int i = 0; i < 200; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+
+            System.out.println(i);//quando a condição for verdadeira vai pular essa impressão
+        }
+
+        System.out.println("FIM");
+    }
+}
+```
+
+### Loops aninhados
+Basicamente é colocar uma estrutura de repetição dentro da outra.
+
+Quando se lida com vários loops aninhados podemos ter problemas para conseguir
+manipular a entrada e saída nesses blocos de código, para faciliar temos as **labels**.
+
+Labels: dão nomes para as estruturas de repetição.
+```java
+public class InnerLoops {
+    public static void main(String[] args) {
+        outer://modo de como nomear labels, aqui o for abaixo da label recebe o nome de outer
+        for (int i = 1; i <= 10; i++) {
+            inner:
+            for (int j = 1; j <= 10; j++) {
+                if (j == 5) {
+                    break outer;// este break vai fazer interromper a execução do innner e do outer
+                    //se fosse usado um break comum sem a label seria interrompido apenas a execução do for interno
+                    //para ficar mais claro aconteceria com o for abaixo da label inner.
+                }
+                System.out.println(i + j);
+            }
+        }
+        System.out.println("FIM");
+    }
+}
+```
 
 
 ## Exercícios
@@ -438,3 +534,6 @@ Aqui está a lista de exercícios resolvidos durante o módulo.
 - ExCalculateXValues.java
 - ExValorMulta.java
 - ExDiaSemana.java
+- ExEvenSum.java
+- ExAverageWithInput.java
+- ExGeradorTabuada.java

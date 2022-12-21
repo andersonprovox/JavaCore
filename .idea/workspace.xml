@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="144f3e74-0d5a-4a95-8ab0-49c93355d091" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/RepeatWhileDoWhile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TernatyIf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repeatFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExAverageWithInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExEvenSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExGeradorTabuada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InnerLoops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RepeatBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RepeatCotinue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RepeatForOtherUsages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -43,9 +47,30 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ExDiaSemana">
+  <component name="RunManager" selected="Application.ExGeradorTabuada">
+    <configuration name="ExAverageWithInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExAverageWithInput" />
+      <module name="JavaCore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExDiaSemana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExDiaSemana" />
+      <module name="JavaCore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExEvenSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExEvenSum" />
+      <module name="JavaCore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExGeradorTabuada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExGeradorTabuada" />
       <module name="JavaCore" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,6 +85,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExGeradorTabuada" />
+        <item itemvalue="Application.ExAverageWithInput" />
+        <item itemvalue="Application.ExEvenSum" />
         <item itemvalue="Application.ExDiaSemana" />
         <item itemvalue="Application.exCalculateXValues" />
       </list>
