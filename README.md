@@ -9,6 +9,7 @@ Arquivos, anotações e exercícios propostos pela plataforma Java Insider da So
 5. Tipo String
 6. Operadores do Java
 7. Estruturas de seleção
+8. Estruturas de repetição
 
 ## Início <a name="Início"></a>
 - em 1992 a Sun microsystems buscava inovações tecnológicas
@@ -497,7 +498,6 @@ public class RepeatCotinue {
     }
 }
 ```
-
 ### Loops aninhados
 Basicamente é colocar uma estrutura de repetição dentro da outra.
 
@@ -524,8 +524,52 @@ public class InnerLoops {
     }
 }
 ```
+## Debug e documentação
+### Inserindo comentários
+Quando há algo a ser realizado podemos usar o `TODO` en un trcho do código para que seja revisto posterioremente.
 
+Podemos usar o `FIXME` para caso algo esteja para ser corrigido e precisa voltar depois essa marcação auxilia muito quando usamos uma IDE, Intellij, Eclipse etc.
 
+Podemos entender que o `FIXME` é para arrumar algo e o `TODO` é para inserir algo que está faltando, essas marcações são mais para orientação visual do desenvolvedor.
+
+### Consultar o Javadoc
+
+Forma de documentar tudo que faz parte do seu projeto Java.
+
+[javadoc](https://docs.oracle.com)
+
+É possível verificar documentos de funções e classes do Java e os itens de uma versão do Java específica também.
+
+também possível encontrar o Javadoc dentro da sua IDE, no Intellij clique 2x no shift e 
+selecione no canto superior direito _project and libraries_.
+
+### Exportando o javadoc do projeto
+Javadoc auxilia na documentação para uso posterior seja do desenvolvedor ou de outras pessoas.
+
+```java
+/**
+ * Isso é o modo de definir um javadoc
+ * 
+ * @author ANDERSON FONSECA
+ * @version 1.0
+ * @since 1.0
+ */
+```
+
+Marcações usadas no Javadoc auxliam na organização das informações, seja versão, autor e outras, começam com `@`;
+
+Essa documentação do Javadoc pode ser exportada para HTML.
+O próprio java faz isso, no intellij o caminho é `Tools -> generate JavaDoc`.
+
+`@Deprecated` algo que está na linguagem, mas não deve ser mais usado.
+
+Quando a IDE mostrar isso é que aquela função por questões de atualização e de engenharia, não deve mais ser mais usada
+e mostra uma alternativa. Quando se usa essa notação, diz ao usuário que aquela funcionalidade não estará disponível para uso
+então começa a dizer ao desenvolvedor que deve mudar e usar algo mais e apropriado para manter a segurança da aplicação.
+
+**Warnings:** são avisos de coisas que podem ser melhoradas e que merecem a sua atenção.
+
+`@SuppressWarnings`: suprime warnings do código para o compilador mostrar na IDE.
 ## Exercícios
 Aqui está a lista de exercícios resolvidos durante o módulo.
 - ExExpression.java
